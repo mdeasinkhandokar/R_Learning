@@ -70,7 +70,7 @@ all(c(F,F,F,F))  #all are F
 
 #Matrix ####
 
-thisMatrix <-matrix(c(1,2,3,4,5,6), nrow=3, ncol=3)
+thisMatrix <-matrix(c(1,2,3,4,5,6), nrow=3, ncol=3,byrow=T)
 thisMatrix
 thisMatrix[2,2]
 thisMatrix[2,]
@@ -78,9 +78,28 @@ thisMatrix[,1]
 newmatrix <- cbind(thisMatrix,c(7,8,9,10,11,12))
 newmatrix
 
+mat1  <-matrix(c(1,2,3,4,5,6), nrow=3, ncol=3,byrow=T)
+mat1
+
+
+mat2 <- matrix (c(0,5,6,7),2,byrow=T)
+mat2
+
+is.matrix(mat2)
+mat2
 
 
 
+#Element wise multiplication (Jadamard multiplication)
+mul <-mat1 *mat2
+print (mul)
+
+
+
+
+
+is.matrix(matrix(c(0,10,1),ncol=3))
+is.matrix(c(0,10,2))
 
 
 
