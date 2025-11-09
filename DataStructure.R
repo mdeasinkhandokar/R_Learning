@@ -62,3 +62,16 @@ mean(x1,na.rm=T)
 
 
 
+#Array ####
+arr1 <- array(c(1:12),c(2,3,2))
+arr1
+
+
+
+#Data Frame ####
+df1 <-data.frame(id =c(1,2,3), age=c(12,32,43),gender =factor(c("F","M","F")))
+df1
+
+is.data.frame(df1)
+summary(df1)
+

@@ -82,7 +82,7 @@ mat1  <-matrix(c(1,2,3,4,5,6), nrow=3, ncol=3,byrow=T)
 mat1
 
 
-mat2 <- matrix (c(0,5,6,7),2,byrow=T)
+mat2 <- matrix (c(0,5,6,7,34,1),3,3,byrow=T)
 mat2
 
 is.matrix(mat2)
@@ -90,19 +90,26 @@ mat2
 
 
 
+
+
+
 #Element wise multiplication (Jadamard multiplication)
 mul <-mat1 *mat2
 print (mul)
 
-
-
+#Matirx multiplication
+mat1 %*% mat2
+dim (mat1)
+dim(mat2)
 
 
 is.matrix(matrix(c(0,10,1),ncol=3))
 is.matrix(c(0,10,2))
 
 
-
+mat3 <- c(1,10,20,30)
+mat1 %*% mat2  #it will work
+mat3 %*% mat1  #will raise an error
 
 
 
