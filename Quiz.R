@@ -330,3 +330,103 @@ list_to_df <- data.frame(
 )
 
 print(list_to_df)
+
+
+
+#if statement ####
+x<-1
+
+if(x>5){
+  print ("x is greater than 5")
+}else{
+  print ("x is 5 or less")
+}
+
+score <-25
+if(score >=90){
+  print("Grade A")
+}else if(score>=80){
+  print("Grade B")
+}else if(score >=70){
+  print ("Grade C")  
+}else{
+  print("Grade F")
+}
+
+
+
+#For loop ####
+for(i in 1:5){
+  print(paste("Iteration ",i))
+}
+
+#repeat Loop( with break)
+i<-1
+repeat{
+  print(i)
+  i<-i+1
+  if(i>5)break
+}
+
+#next Statement (skip to next iteration)
+for(i in 1:5){
+  if(i==3)next
+  print(i)
+}
+
+#break Statement (exit the loop)
+for (i in 1:5){
+  if(i ==4)break
+  print(i)
+}
+
+#Built-in Functions####
+
+#mean()
+numbers <- c(10,20,30,40,50)
+mean(numbers)
+
+sum(numbers)
+
+length(numbers)
+
+#round()
+pi_val<-3.14159
+round(pi_val,3)
+
+
+paste("Hello", "World")
+
+#Functions ####
+add_numbers <-function (a,b){
+  return (a+b)
+}
+add_numbers(3,4)
+
+#Function to check if a number is even
+is_even <-function(x){
+  if(x%% 2==0){
+    return(T)
+  }else{
+    return(F)
+  }
+}
+is_even(5)
+
+#Function with default parameter
+greet <- function(name="User"){
+  paste("hello", name)
+
+}
+
+greet()
+
+greet("Easin")
+
+
+#Anonymous (Lambda) Function with sapply()
+numbers <-1:5
+squared <- sapply(numbers, function(x) x^3)
+print(squared)
+
+
