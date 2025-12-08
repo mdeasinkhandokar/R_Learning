@@ -24,7 +24,8 @@ sum_vec<- vec1+vec2
 print(sum_vec)
 pro_vec <- vec1* vec2
 print(pro_vec)
-
+div_vec <-vec2/vec1
+div_vec
 
 # Accessing Elements in a Vector
 # Create a vector

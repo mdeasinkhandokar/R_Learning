@@ -45,9 +45,11 @@ raw_data$salary[is.na(raw_data$salary)]<-median(raw_data$salary,na.rm=T)
 raw_data
 
 
-
-
-
+#FIXING NOISY VALUES ####
+raw_data
+raw_data<- ifelse(raw_data$salary>500000,9000,raw_data$salary)
+raw_data
+raw_data
 
 
 
